@@ -2332,7 +2332,7 @@ The `takeWhile` method returns items in the collection until the given callback 
 <a name="method-tap"></a>
 #### `tap()` {#collection-method}
 
-The `tap` method passes the collection to the given callback, allowing you to "tap" into the collection at a specific point and do something with the items while not affecting the collection itself. The collection is then returned by the `tap` method:
+The `tap` method passes a "clone" of the collection to the given callback, allowing you to "tap" into the collection at a specific point and do something with the items while not affecting the collection itself. The collection is then returned by the `tap` method:
 
     collect([2, 4, 3, 1, 5])
         ->sort()
